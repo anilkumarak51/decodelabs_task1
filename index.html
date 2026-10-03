@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Responsive frontend interface project">
+
+    <title>StudentHub - Responsive Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                StudentHub
+            </div>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    WELCOME TO STUDENTHUB
+                </p>
+
+                <h1>
+                    Learn. Build. Grow.
+                </h1>
+
+                <p>
+                    A simple responsive web application designed
+                    to help students organize their learning and
+                    improve their skills.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#features" class="primary-button">
+                        Explore Features
+                    </a>
+
+                    <a href="#about" class="secondary-button">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features" id="features">
+
+            <div class="section-title">
+
+                <p>OUR FEATURES</p>
+
+                <h2>
+                    Everything You Need
+                </h2>
+
+                <span>
+                    Simple tools designed for students.
+                </span>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>
+                        Learn
+                    </h3>
+
+                    <p>
+                        Access learning resources and improve
+                        your technical knowledge.
+                    </p>
+
+                    <button onclick="showMessage('Learning feature')">
+                        Explore
+                    </button>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Build
+                    </h3>
+
+                    <p>
+                        Create practical projects and develop
+                        real-world programming skills.
+                    </p>
+
+                    <button onclick="showMessage('Project feature')">
+                        Explore
+                    </button>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🚀
+                    </div>
+
+                    <h3>
+                        Grow
+                    </h3>
+
+                    <p>
+                        Improve your skills and prepare yourself
+                        for future career opportunities.
+                    </p>
+
+                    <button onclick="showMessage('Growth feature')">
+                        Explore
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div class="about-image">
+                <div class="image-box">
+                    STUDENT
+                </div>
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="small-title">
+                    ABOUT US
+                </p>
+
+                <h2>
+                    Designed For Modern Students
+                </h2>
+
+                <p>
+                    StudentHub is a simple frontend interface
+                    created as a responsive web application.
+                    It demonstrates HTML5, CSS3 and JavaScript
+                    fundamentals.
+                </p>
+
+                <p>
+                    The interface is designed to work across
+                    mobile phones, tablets and desktop computers.
+                </p>
+
+                <button onclick="showMessage('Welcome to StudentHub!')">
+                    Get Started
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="section-title">
+
+                <p>CONTACT</p>
+
+                <h2>
+                    Get In Touch
+                </h2>
+
+                <span>
+                    Fill out the form below.
+                </span>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Enter your message"
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+                StudentHub
+            </h3>
+
+            <p>
+                Learn. Build. Grow.
+            </p>
+
+            <p class="copyright">
+                © 2026 StudentHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
